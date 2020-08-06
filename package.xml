@@ -3,7 +3,7 @@
   <version>0.0.0</version>
   <description>
     <p>
-      ROS-Industrial support for the KUKA KR1000_TITAN (and variants).
+      Support package for the KUKA KR1000_TITAN (and variants), based on ROS-Industrial support packages.
     </p>
     <p>
       This package contains configuration data, 3D models and launch files
@@ -12,7 +12,7 @@
     <p>
       Joint limits and max joint velocities are based on the information in
       the KUKA data sheets.  All URDFs / XACROs are based on the
-      default motion and joint velocity limits, unless noted otherwise (ie:
+      default motion <!--and joint velocity limits-->, unless noted otherwise (ie:
       no support for high speed joints, extended / limited motion ranges or
       other options).
     </p>
@@ -26,14 +26,14 @@
   <maintainer email="luiz.ferreira@ccm-ita.org.br">Luiz Fernando Lapetina Rocha Ferreira</maintainer>
   <license>BSD</license>
 
-  <url type="website">http://ros.org/wiki/kuka_kr1000_titan_support</url>
-  <url type="bugtracker">https://github.com/ros-industrial/kuka/issues</url>
-  <url type="repository">https://github.com/ros-industrial/kuka</url>
+<!--  <url type="website">http://ros.org/wiki/kuka_kr1000_titan_support</url>-->
+<!--  <url type="bugtracker">https://github.com/ros-industrial/kuka/issues</url>-->
+<!--  <url type="repository">https://github.com/ros-industrial/kuka</url>-->
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>roslaunch</build_depend>
 
-  <run_depend>kuka_driver</run_depend>
+<!--  <run_depend>kuka_driver</run_depend>-->
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>rviz</run_depend>
