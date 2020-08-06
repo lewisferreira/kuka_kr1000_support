@@ -1,0 +1,23 @@
+<launch>
+  <arg name="ip_str" value="127.0.0.1" />
+
+  <group ns="load_kr1000_titan__">
+    <include file="$(find kuka_kr1000_titan_support)/launch/load_kr1000_titan.launch"/>
+  </group>
+
+  <group ns="test_kr1000_titan__">
+    <include file="$(find kuka_kr1000_titan_support)/launch/test_irb2400.launch"/>
+  </group>
+
+  <group ns="robot_interface_download_kr1000_titan__">
+    <include file="$(find kuka_kr1000_titan_support)/launch/robot_interface_download_kr1000_titan.launch">
+      <arg name="robot_ip" value="$(arg ip_str)" />
+    </include>
+  </group>
+
+  <group ns="robot_state_visualize_kr1000_titan__">
+    <include file="$(find kuka_kr1000_titan_support)/launch/robot_state_visualize_kr1000_titan.launch">
+      <arg name="robot_ip" value="$(arg ip_str)" />
+    </include>
+  </group>
+</launch>

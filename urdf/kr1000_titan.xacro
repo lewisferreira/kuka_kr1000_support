@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<robot name="kuka_kr1000_titan" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find kuka_kr1000_titan_support)/urdf/kr1000_titan_macro.xacro"/>
+  <xacro:kuka_kr1000_titan prefix="${robot_prefix}"/>
+
+</robot>
